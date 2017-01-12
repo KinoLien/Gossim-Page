@@ -512,3 +512,7 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222222;
 }
+
+.gs-pin{
+  width:50px; margin:0 auto;
+}
