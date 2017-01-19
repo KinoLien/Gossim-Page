@@ -60,8 +60,11 @@
                     <!-- <li>
                         <a class="page-scroll" href="#download">Download</a>
                     </li> -->
-                    <li>
+                    <!-- <li>
                         <a class="page-scroll" href="#contact">Contact</a>
+                    </li> -->
+                    <li>
+                        <a class="page-scroll" href="#pricing">Pricing</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#support">Support</a>
@@ -224,7 +227,7 @@
         <div class="overlay"></div>
     </section>
 
-    <section id="contact" class="contact bg-primary">
+    <!-- <section id="contact" class="contact bg-primary">
         <div class="container">
             <h2>We <i class="fa fa-heart"></i> new friends!</h2>
             <ul class="list-inline list-social">
@@ -239,7 +242,99 @@
                 </li>
             </ul>
         </div>
+    </section> -->
+
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="pricing-wrap">
+                        <div class="pricing-header"> FREE </div>
+                        <div class="pricing-body">
+                            <div class="pricing-body-descript">
+                                <div class="pricing-body-number">
+                                    <span class="pricing-body-sign">$</span>
+                                    <span>0</span>
+                                </div>
+                                <div class="pricing-body-text">LIFETIME</div>
+                            </div>
+                            <div class="pricing-body-features body-font">
+                                <ul>
+                                    <li>Unlimited Admins</li>
+                                    <li>Up to 200 Users/sec.</li>
+                                    <li>Reserve 30,000 Messages</li>
+                                    <li>Email Notification</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pricing-footer">
+                            <div class="pricing-footer-button" onclick="onPricingButtonClick('free');">Sign up</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="pricing-wrap">
+                        <div class="pricing-header"> PRO </div>
+                        <div class="pricing-body">
+                            <div class="pricing-body-descript">
+                                <div class="pricing-body-number">
+                                    <span class="pricing-body-sign">$</span>
+                                    <span>89</span>
+                                </div>
+                                <div class="pricing-body-text">PER MONTH</div>
+                            </div>
+                            <div class="pricing-body-features body-font">
+                                <ul>
+                                    <li>Unlimited Admins</li>
+                                    <li>Up to 5,000 Users/sec.</li>
+                                    <li>Reserve 700,000 Messages</li>
+                                    <li>Email/SMS Notification</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pricing-footer">
+                            <div class="pricing-footer-button" onclick="onPricingButtonClick('pro');">Sign up</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="pricing-wrap">
+                        <div class="pricing-header"> CUSTOMIZE </div>
+                        <div class="pricing-body">
+                            <div class="pricing-body-descript">
+                                <div class="pricing-body-number">
+                                    <span class="pricing-body-sign">$</span>
+                                    <span>?</span>
+                                </div>
+                                <div class="pricing-body-text">Contact Us</div>
+                            </div>
+                            <div class="pricing-body-features body-font">
+                                <ul>
+                                    <li>Unlimited Admins</li>
+                                    <li>Unlimited Users per second</li>
+                                    <li>Reserve Unlimited Messages</li>
+                                    <li>Email/SMS Notification</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pricing-footer">
+                            <div class="pricing-footer-button" onclick="onPricingButtonClick('customize');">Sign up</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <a id="signup" href="" target="_blank" style="display: none;"></a>
+    <script>
+        function onPricingButtonClick(type){ 
+            var h = "https://console.gossim.cc/signup";
+            var a = document.getElementById('signup');
+            a.href = h + "?type=" + type;
+            a.click();
+        }
+    </script>
 
     <footer>
         <div class="container">
